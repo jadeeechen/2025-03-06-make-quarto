@@ -28,7 +28,6 @@ write_csv(coef, opt$output_coef)
 
 # plot results
 
-
 ggplot(coef |> dplyr::filter(term != "(Intercept)"), aes(x = term, y = or)) +
   geom_point() +
   coord_flip() +
